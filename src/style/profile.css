@@ -22,7 +22,7 @@ html, body {
 }
 .page .profile {
   z-index: 1;
-  transform: translateY(55%);
+  transform: translateY(58%);
 }
 .page .profile img {
   width: 28vw;
