@@ -1,0 +1,125 @@
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #171A23;
+  font-family: 'Roboto', sans-serif;
+
+  .profile {
+    z-index: 1;
+    transform: translateY(55%);
+
+    img {
+      width: 30vw;
+      height: 30vw;
+      border-radius: 5vw;
+      background-color: black;
+      border: white 5px solid;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.6vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #E6EAF2;
+    }
+  }
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    height: 84vh;
+
+    background: #262A34;
+    border-radius: 5vw 5vw 0px 0px;
+
+    .zero {
+      height: 25vw;
+      width: 90%;
+      border-bottom:4px solid #1D1D28;
+      margin-top: 0;
+    }
+
+    .button_open {
+      width: 77vw;
+      height: 8.5vh;
+      border-radius: 10px;
+      margin: auto;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.6vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: none;
+      color: #E5E5E5;
+      opacity: 0.7;
+      text-shadow: 0px 1.33333px 1.33333px rgba(0, 0, 0, 0.5);
+
+      background-repeat: no-repeat;
+      background-size: 77vw 8.5vh;
+      background-color: rgba(117, 190, 218, 0.0);;
+    }
+    .Manifesto {
+      background-image: url(../img/Manifesto.png);
+    }
+    .WayCo {
+      background-image: url(../img/WayCo.png);
+    }
+    .RecyclingStarter {
+      background-image: url(../img/RecyclingStarter.png);
+    }
+    .ISC {
+      background-image: url(../img/ISC.png);
+    }
+    .RushZone {
+      background-image: url(../img/RushZone.png);
+    }
+    .button_open_camera {
+      width: 60vw;
+      height: 6.6vh;
+      margin: auto;
+      margin-top: 3vh;
+      background: #1ADDA5;
+      box-shadow: 0px 1.33333px 1.33333px rgba(0, 0, 0, 0.25);
+      border-radius: 4vw;
+
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.6vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #1D1D28;
+    }
+    .active {
+      opacity: 1;
+    }
+  }
+}
