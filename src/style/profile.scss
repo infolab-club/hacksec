@@ -80,7 +80,9 @@ html, body {
 
       background-repeat: no-repeat;
       background-size: 77vw 8.5vh;
-      background-color: rgba(117, 190, 218, 0.0);;
+      background-color: rgba(117, 190, 218, 0.0);
+      outline: none;
+
     }
     .Manifesto {
       background-image: url(../img/Manifesto.png);
@@ -117,6 +119,8 @@ html, body {
       text-transform: uppercase;
 
       color: #1D1D28;
+      border: none;
+      outline: none;
     }
     .active {
       opacity: 1;
