@@ -216,10 +216,60 @@ html, body {
 }
 
 .camera {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.camera .frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: multiply;
+  background: rgba(29, 29, 40, 0.4);
+}
+.camera .frame .button_back {
+  position: absolute;
+  top: 4vh;
+  left: 5vw;
+  width: 10vw;
+  height: 10vw;
+  mix-blend-mode: normal;
+  background: #E6EAF2;
+  border-radius: 3vw;
+  z-index: 2;
+}
+.camera .frame .button_back .fa {
+  font-size: 2.3vh;
+}
+.camera .frame .box {
+  position: absolute;
+  width: 41vw;
+  height: 24vh;
+  left: 30vw;
+  top: 40vh;
+  z-index: 2;
+  mix-blend-mode: normal;
+  background: #FFFFFF;
+}
+.camera .frame .box div {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: normal;
+  outline: 1vw dashed #fffefe;
+  z-index: 3;
+}
+.camera .frame .button_open_camera {
+  position: absolute;
+  bottom: 4vh;
+  left: 20vw;
+  z-index: 2;
+  mix-blend-mode: normal;
 }
 
 .header {
@@ -258,7 +308,7 @@ html, body {
 
 .button_open_camera {
   width: 60vw;
-  height: 6.6vh;
+  height: 6.9vh;
   margin: 2vh auto;
   margin-top: 3vh;
   background: #1ADDA5;
