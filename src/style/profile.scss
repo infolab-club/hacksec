@@ -244,6 +244,12 @@ html, body {
     }
    }
 }
+.camera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 //заголовок
 .header {
   display: flex;
