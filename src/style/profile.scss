@@ -25,8 +25,8 @@ html, body {
     transform: translateY(55%);
 
     img {
-      width: 30vw;
-      height: 30vw;
+      width: 28vw;
+      height: 28vw;
       border-radius: 5vw;
       background-color: black;
       border: white 5px solid;
@@ -119,37 +119,6 @@ html, body {
   height: 100vh;
 
   .header {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-
-    .title {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-
-      .button_back {
-        width: 9vw;
-        height: 9vw;
-
-        background: #E6EAF2;
-        border-radius: 3vw;
-
-        .fa {
-          font-size: 2.3vh;
-        }
-      }
-      h1 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 4vh;
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
-        color: #1ADDA5;
-      }
-    }
     .info {
       width: 100vw;
       height: 11vh;
@@ -237,10 +206,54 @@ html, body {
       }
     }
   }
-
 }
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 
+  .preview {
+    width: 90vw;
+    height: 32vh;
+    margin:0 auto;
+  }
+}
+//заголовок
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .button_back {
+      width: 9vw;
+      height: 9vw;
+
+      background: #E6EAF2;
+      border-radius: 3vw;
+
+      .fa {
+        font-size: 2.3vh;
+      }
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 4vh;
+      display: flex;
+      align-items: flex-end;
+      text-align: center;
+      color: #1ADDA5;
+    }
+  }
+}
 //кнопка внизу всех страниц
 .button_open_camera {
   width: 60vw;
