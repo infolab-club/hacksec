@@ -184,11 +184,35 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow: auto;
 }
 .project .preview {
   width: 90vw;
-  height: 32vh;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.project .preview img {
+  width: 30vw;
+  margin: auto;
+}
+.project .preview img:nth-child(odd) {
+  width: 28vw;
+  opacity: 0.7;
+}
+.project .text {
+  width: 80vw;
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  color: white;
+}
+.project .text p {
+  color: #1ADDA5;
 }
 
 .header {
@@ -220,11 +244,15 @@ html, body {
   text-align: center;
   color: #1ADDA5;
 }
+.header .title div:last-child {
+  width: 9vw;
+  height: 9vw;
+}
 
 .button_open_camera {
   width: 60vw;
   height: 6.6vh;
-  margin: 2vh;
+  margin: 2vh auto;
   margin-top: 3vh;
   background: #1ADDA5;
   box-shadow: 0px 1.33333px 1.33333px rgba(0, 0, 0, 0.25);
