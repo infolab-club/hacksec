@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
     <title>HackSec</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link href="src/style/profile.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
     <script src="src/js/navigation/navigation.js" defer></script>
     <script src="src/js/navigation/render.js" defer></script>
     <script src="src/js/ui/ui.js" defer></script>
@@ -14,29 +14,109 @@
 <body>
 <!-- Профиль -->
 <section id="profile" class="page">
-    <h1>Profile</h1>
-    <button id="button_open_camera" class="button_open">Камера</button>
-    <button id="button_open_project" class="button_open">Проект</button>
+    <div class="profile">
+        <img src="src/img/Icon.png" alt="">
+        <h1>Profile</h1>
+    </div>
+    <div class="main-wrapper">
+        <div class="zero"></div>
+        <button class="button_open active Manifesto">Manifesto</button>
+        <button class="button_open WayCo">WayCo</button>
+        <button class="button_open RecyclingStarter">Recycling Starter</button>
+        <button class="button_open ISC">ISC</button>
+        <button class="button_open RushZone">Rush Zone</button>
+        <button class="button_open_camera">Сканировать</button>
+    </div>
 </section>
 
 <!-- Камера -->
-<section id="camera" class="page hidden">
-    <button id="button_close_camera" class="button_back">Назад</button>
-    <h1>Camera</h1>
-    <button id="button_open_game" class="button_open">Играть</button>
+<section id="camera" class="page camera hidden">
+    <img
+            src="https://avatars.yandex.net/get-music-content/176019/ae55886e.a.7643997-1/m1000x1000"
+            class="camera_image"
+            alt=""
+    >
+    <div class="frame">
+        <div class="box"></div>
+    </div>
+    <button class="button_back"><i class="fa fa-chevron-left"></i></button>
+    <div class="camera_border"></div>
 </section>
 
 <!-- Игра -->
-<section id="game" class="page hidden">
-    <button id="button_close_game" class="button_back">Назад</button>
-    <h1>Game</h1>
-    <button id="button_hack" class="button_open">Взломать</button>
+<section id="game" class="page game hidden">
+    <div class="header">
+        <div class="title">
+            <button class="button_back"><i class="fa fa-chevron-left"></i></button>
+            <h1 style="padding: 3vh">Game</h1>
+            <div></div>
+        </div>
+        <div class="info">
+            <span>Сервис для заказа кофе, состоящий из web приложения и нативных мобильных приложений.
+            </span>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <span class="active">Платформа</span>
+            <div class="container">
+                <div class="block correct">Android</div>
+                <div class="block correct">iOS</div>
+                <div class="block correct">Web</div>
+                <div class="block">Windows</div>
+            </div>
+        </div>
+        <div>
+            <span class="">Языки программирования</span>
+            <div class="container">
+                <div class="block correct">Java Script</div>
+                <div class="block">C#</div>
+                <div class="block correct">Java</div>
+                <div class="block">Swift</div>
+            </div>
+        </div>
+        <div>
+            <span class="">Среды разработки</span>
+            <div class="container">
+                <div class="block incorrect">Unity</div>
+                <div class="block correct">Android Studio</div>
+                <div class="block correct">XCode</div>
+                <div class="block">Web Storm</div>
+            </div>
+        </div>
+    </div>
+    <button class="button_open_camera">Взломать</button>
 </section>
 
 <!-- Проект -->
-<section id="project" class="page hidden">
-    <button id="button_close_project" class="button_back">Назад</button>
-    <h1>Project</h1>
+<section id="project" class="page project hidden">
+    <div class="header">
+        <div class="title">
+            <button class="button_back"><i class="fa fa-chevron-left"></i></button>
+            <h1 style="padding: 3vh">Project</h1>
+            <div></div>
+        </div>
+    </div>
+    <div class="preview">
+        <img src="src/img/Screenshot.svg" alt="">
+        <img src="src/img/Screenshot.svg" alt="">
+        <img src="src/img/Screenshot.svg" alt="">
+    </div>
+    <div class="text">
+        <span>WayCo — стартап по удалённому заказу кофе.
+            Перед тем, как пойти на работу/учёбы, ты можешь сделать заказ в кофейне через наш сервис к определённому времени. И когда ты подойдёшь, просто забираешь заказ без необходимости стоять в очереди или ждать его приготовления.
+            Кроме того, есть возможность динамического определения времени прибытия в кофейню по геолокации и дорожной ситуации.
+            <br><br>
+            Сервис состоит из нескольких частей:<br>
+            1. Web приложение для пользователей — HTML5/CSS3/JS/React<br>
+            2. VK Mini App для пользователей — HTML5/CSS3/JS/React<br>
+            3. iOS приложение — Swift<br>
+            4. Android приложение — Java<br>
+            5. Приложение для касс кофейн-партнёров для отслеживания заказов — Java
+        </span>
+    </div>
+    <button id="button_hack" class="button_open_camera">Присоединиться</button>
+
 </section>
 </body>
 </html>
