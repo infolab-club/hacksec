@@ -238,11 +238,20 @@ html, body {
     justify-content: center;
     margin:20px auto;
     color: white;
+    padding-bottom: 10vh;
 
     p {
       color: #1ADDA5;
     }
    }
+  
+  .button_open_camera {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 2vh;
+  }
 }
 .camera {
   width: 100vw;
@@ -261,46 +270,59 @@ html, body {
     height: 100vh;
     mix-blend-mode: multiply;
     background: rgba(29, 29, 40, 0.4);
-
-    .button_back {
-      position: absolute;
-      top: 4vh;
-      left: 5vw;
-      width: 10vw;
-      height: 10vw;
-      mix-blend-mode: normal;
-      background: #E6EAF2;
-      border-radius: 3vw;
-      z-index: 2;
-      .fa {
-        font-size: 2.3vh;
-      }
-    }
     .box {
       position: absolute;
-      width: 41vw;
-      height: 24vh;
-      left: 30vw;
-      top: 40vh;
+      width: 40vw;
+      height: 40vw;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
       z-index: 2;
       mix-blend-mode: normal;
       background: #FFFFFF;
-      div {
-        width: 100%;
-        height: 100%;
-        mix-blend-mode: normal;
-        outline: 1vw dashed #fffefe;
+    }
+  }
+  //TODO remove
+  .camera_image {
+    height: 100%;
+    object-fit: cover;
+  }
 
-        z-index: 3;
-      }
+  .button_back {
+    position: absolute;
+    top: 4vh;
+    left: 5vw;
+    width: 10vw;
+    height: 10vw;
+    mix-blend-mode: normal;
+    background: white;
+    border-radius: 3vw;
+    z-index: 1;
+    .fa {
+      font-size: 2.3vh;
+      position: relative;
+      right: 2px;
     }
-    .button_open_camera {
-      position: absolute;
-      bottom: 4vh;
-      left: 20vw;
-      z-index: 2;
-      mix-blend-mode: normal;
-    }
+  }
+  .camera_border {
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 1vw dashed white;
+    z-index: 3;
+  }
+  .button_open_camera {
+    position: absolute;
+    bottom: 4vh;
+    left: 20vw;
+    mix-blend-mode: normal;
   }
 }
 //заголовок
