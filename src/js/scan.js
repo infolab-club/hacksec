@@ -7,8 +7,7 @@ function startScan() {
          * devices would be an array of objects of type:
          * { id: "id", label: "label" }
          */
-            // devicesLength = devices.length
-        let cameraNum = devices.length - 1;
+        const cameraNum = devices.length - 1;
         console.log("Camera Number: " + cameraNum)
         if (devices && devices.length) {
             cameraId = devices[cameraNum].id;
