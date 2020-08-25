@@ -5,6 +5,7 @@ function setOnClickListeners() {
     // Кнопка "Открыть камеру"
     document.getElementById('button_open_camera').addEventListener('click', () => {
         openPage('camera');
+        startScan();
     });
     // Кнопка "Начать играть"
     document.getElementById('button_open_game').addEventListener('click', () => {
@@ -16,6 +17,7 @@ function setOnClickListeners() {
     });
     // Кнопка "Закрыть камеру"
     document.getElementById('button_close_camera').addEventListener('click', () => {
+        stopScan();
         openPage('profile');
     });
     // Кнопка "Завершить игру"

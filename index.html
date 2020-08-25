@@ -5,11 +5,14 @@
     <title>HackSec</title>
     <link rel="stylesheet" href="src/css/style.css">
     <link href="src/style/profile.css" rel="stylesheet">
+    <link href="src/css/camera.css" rel="stylesheet">
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
     <script src="src/js/navigation/navigation.js" defer></script>
     <script src="src/js/navigation/render.js" defer></script>
     <script src="src/js/ui/ui.js" defer></script>
     <script src="src/js/start.js" defer></script>
+    <script src="node_modules/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script src="src/js/scan.js"></script>
 </head>
 <body>
 <!-- Профиль -->
@@ -31,11 +34,7 @@
 
 <!-- Камера -->
 <section id="camera" class="page camera hidden">
-    <img
-            src="https://avatars.yandex.net/get-music-content/176019/ae55886e.a.7643997-1/m1000x1000"
-            class="camera_image"
-            alt=""
-    >
+    <div class="qr_camera" id="reader"></div>
     <div id="button_open_game" class="frame">
         <div class="box"></div>
     </div>
