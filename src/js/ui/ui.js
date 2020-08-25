@@ -14,10 +14,6 @@ function setOnClickListeners() {
     document.getElementById('button_hack').addEventListener('click', () => {
         openPage('project');
     });
-    // Кнопка "Просмотреть проект"
-    document.getElementById('button_open_project').addEventListener('click', () => {
-        openPage('project');
-    });
     // Кнопка "Закрыть камеру"
     document.getElementById('button_close_camera').addEventListener('click', () => {
         openPage('profile');

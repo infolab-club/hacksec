@@ -25,7 +25,7 @@
         <button class="button_open RecyclingStarter">Recycling Starter</button>
         <button class="button_open ISC">ISC</button>
         <button class="button_open RushZone">Rush Zone</button>
-        <button class="button_open_camera">Сканировать</button>
+        <button id="button_open_camera" class="button_open_camera">Сканировать</button>
     </div>
 </section>
 
@@ -36,10 +36,10 @@
             class="camera_image"
             alt=""
     >
-    <div class="frame">
+    <div id="button_open_game" class="frame">
         <div class="box"></div>
     </div>
-    <button class="button_back"><i class="fa fa-chevron-left"></i></button>
+    <button id="button_close_camera" class="button_back"><i class="fa fa-chevron-left"></i></button>
     <div class="camera_border"></div>
 </section>
 
@@ -47,7 +47,7 @@
 <section id="game" class="page game hidden">
     <div class="header">
         <div class="title">
-            <button class="button_back"><i class="fa fa-chevron-left"></i></button>
+            <button id="button_close_game" class="button_back"><i class="fa fa-chevron-left"></i></button>
             <h1 style="padding: 3vh">Game</h1>
             <div></div>
         </div>
@@ -85,14 +85,14 @@
             </div>
         </div>
     </div>
-    <button class="button_open_camera">Взломать</button>
+    <button id="button_hack" class="button_open_camera">Взломать</button>
 </section>
 
 <!-- Проект -->
 <section id="project" class="page project hidden">
     <div class="header">
         <div class="title">
-            <button class="button_back"><i class="fa fa-chevron-left"></i></button>
+            <button id="button_close_project" class="button_back"><i class="fa fa-chevron-left"></i></button>
             <h1 style="padding: 3vh">Project</h1>
             <div></div>
         </div>
@@ -115,7 +115,7 @@
             5. Приложение для касс кофейн-партнёров для отслеживания заказов — Java
         </span>
     </div>
-    <button id="button_hack" class="button_open_camera">Присоединиться</button>
+    <button class="button_open_camera">Присоединиться</button>
 
 </section>
 </body>
