@@ -274,10 +274,19 @@ html, body {
   position: relative;
   right: 2px;
 }
-.camera .camera_border-wrapper {
-  height: 100vh;
-}
 .camera .camera_border {
+  width: 40vw;
+  height: 40vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1vw dashed white;
+  z-index: 3;
+}
+.camera .camera_border-wrapper {
   width: 40vw;
   height: 40vw;
   position: absolute;
@@ -352,10 +361,6 @@ html, body {
 button {
   border: none;
   outline: none;
-}
-
-.vh100 {
-  height: 100vh;
 }
 
 /*# sourceMappingURL=profile.css.map */
