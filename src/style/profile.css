@@ -355,4 +355,9 @@ button {
   outline: none;
 }
 
+video {
+  height: 100%;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=profile.css.map */

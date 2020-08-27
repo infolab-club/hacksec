@@ -396,3 +396,7 @@ button {
   border: none;
   outline: none;
 }
+video {
+  height: 100%;
+  object-fit: cover;
+}
