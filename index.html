@@ -119,7 +119,10 @@
 </section>
 <script>
   const elements = document.querySelectorAll(`.vh100`)
-  const f = () => elements.forEach(element => element.style.height = `${window.innerHeight}px`)
+  const f = () => {
+    elements.forEach(element => element.style.height = `${window.innerHeight}px`)
+    document.querySelector(`video`).style.height = `${window.innerHeight}px`
+  }
   f()
   window.addEventListener(`resize`, f)
 </script>
