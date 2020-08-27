@@ -309,26 +309,18 @@ html, body {
   .camera_border {
     width: 40vw;
     height: 40vw;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
     margin: auto;
     border: 1vw dashed white;
     z-index: 3;
   }
   .camera_border-wrapper {
-    width: 40vw;
-    height: 40vw;
     position: absolute;
-    left: 0;
+    height: 100vh;
     top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    border: 1vw dashed white;
-    z-index: 3;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
   }
   .button_open_camera {
     position: absolute;
