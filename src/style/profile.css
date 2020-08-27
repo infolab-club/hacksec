@@ -274,6 +274,9 @@ html, body {
   position: relative;
   right: 2px;
 }
+.camera .camera_border-wrapper {
+  height: 100vh;
+}
 .camera .camera_border {
   width: 40vw;
   height: 40vw;
