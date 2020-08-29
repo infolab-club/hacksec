@@ -6,6 +6,7 @@ let currentPage = 'profile';
  * @param page {string} название экрана
  */
 function openPage(page) {
-    currentPage = page;
+    // currentPage = page;
+    currentPage = "game"
     render();
 }

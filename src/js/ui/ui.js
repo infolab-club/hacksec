@@ -5,11 +5,13 @@ function setOnClickListeners() {
     // Кнопка "Открыть камеру"
     document.getElementById('button_open_camera').addEventListener('click', () => {
         openPage('camera');
-        startScan();
+        // startScan();
+        startGame("");
     });
     // Кнопка "Начать играть"
     document.getElementById('button_open_game').addEventListener('click', () => {
         openPage('game');
+        // startGame("");
     });
     // Кнопка "Взломать" (проект)
     document.getElementById('button_hack').addEventListener('click', () => {

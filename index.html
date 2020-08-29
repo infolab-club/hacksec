@@ -13,6 +13,7 @@
     <script src="src/js/start.js" defer></script>
     <script src="node_modules/html5-qrcode/minified/html5-qrcode.min.js"></script>
     <script src="src/js/scan.js"></script>
+    <script src="src/js/game.js"></script>
 </head>
 <body>
 <!-- Профиль -->
@@ -59,32 +60,32 @@
         <div>
             <span class="active">Платформа</span>
             <div class="container">
-                <div class="block correct">Android</div>
-                <div class="block correct">iOS</div>
-                <div class="block correct">Web</div>
-                <div class="block">Windows</div>
+                <div class="block correct" id="button11" onclick="onClickButton('button11')">Android</div>
+                <div class="block correct" id="button12" onclick="onClickButton('button12')">iOS</div>
+                <div class="block correct" id="button13" onclick="onClickButton('button13')">Web</div>
+                <div class="block" id="button14" onclick="onClickButton('button14')">Windows</div>
             </div>
         </div>
         <div>
             <span class="">Языки программирования</span>
             <div class="container">
-                <div class="block correct">Java Script</div>
-                <div class="block">C#</div>
-                <div class="block correct">Java</div>
-                <div class="block">Swift</div>
+                <div class="block correct" id="button21" onclick="onClickButton('button21')">Java Script</div>
+                <div class="block" id="button22" onclick="onClickButton('button22')">C#</div>
+                <div class="block correct" id="button23" onclick="onClickButton('button23')">Java</div>
+                <div class="block" id="button24" onclick="onClickButton('button24')">Swift</div>
             </div>
         </div>
         <div>
             <span class="">Среды разработки</span>
             <div class="container">
-                <div class="block incorrect">Unity</div>
-                <div class="block correct">Android Studio</div>
-                <div class="block correct">XCode</div>
-                <div class="block">Web Storm</div>
+                <div class="block incorrect" id="button31" onclick="onClickButton('button31')">Unity</div>
+                <div class="block correct" id="button32" onclick="onClickButton('button32')">Android Studio</div>
+                <div class="block correct" id="button33" onclick="onClickButton('button33')">XCode</div>
+                <div class="block" id="button34" onclick="onClickButton('button34')">Web Storm</div>
             </div>
         </div>
     </div>
-    <button id="button_hack" class="button_open_camera">Взломать</button>
+    <button id="button_hack" class="button_open_camera" onclick="onCheckButton()">Взломать</button>
 </section>
 
 <!-- Проект -->
@@ -101,7 +102,7 @@
         <img src="src/img/Screenshot.svg" alt="">
         <img src="src/img/Screenshot.svg" alt="">
     </div>
-    <div class="text">
+    <div class="text" id="project_description">
         <span>WayCo — стартап по удалённому заказу кофе.
             Перед тем, как пойти на работу/учёбу, ты можешь сделать заказ в кофейне через наш сервис к определённому времени. И когда ты подойдёшь, просто забираешь заказ без необходимости стоять в очереди или ждать его приготовления.
             Кроме того, есть возможность динамического определения времени прибытия в кофейню по геолокации и дорожной ситуации.
@@ -118,12 +119,13 @@
 
 </section>
 <script>
-  const elements = document.querySelectorAll(`.vh100`)
-  const f = () => {
-    elements.forEach(element => element.style.height = `${window.innerHeight}px`)
-  }
-  f()
-  window.addEventListener(`resize`, f)
+    const elements = document.querySelectorAll(`.vh100`)
+    const f = () => {
+        elements.forEach(element => element.style.height = `${window.innerHeight}px`)
+    }
+    f()
+    window.addEventListener(`resize`, f)
 </script>
 </body>
 </html>
+
