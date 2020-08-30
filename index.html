@@ -14,6 +14,7 @@
     <script src="node_modules/html5-qrcode/minified/html5-qrcode.min.js"></script>
     <script src="src/js/scan.js"></script>
     <script src="src/js/game.js"></script>
+    <script src="src/js/projectDescription.js"></script>
 </head>
 <body>
 <!-- Профиль -->
@@ -24,11 +25,11 @@
     </div>
     <div class="main-wrapper">
         <div class="zero"></div>
-        <button class="button_open active Manifesto">Manifesto</button>
-        <button class="button_open WayCo">WayCo</button>
-        <button class="button_open RecyclingStarter">Recycling Starter</button>
-        <button class="button_open ISC">ISC</button>
-        <button class="button_open RushZone">Rush Zone</button>
+        <button id="button_open_manifesto" class="button_open active Manifesto">Manifesto</button>
+        <button id="button_open_wayco" class="button_open WayCo">WayCo</button>
+        <button id="button_open_recycling_starter" class="button_open RecyclingStarter">Recycling Starter</button>
+        <button id="button_open_isc" class="button_open ISC">ISC</button>
+        <button id="button_open_rush_zone" class="button_open RushZone">Rush Zone</button>
         <button id="button_open_camera" class="button_open_camera">Сканировать</button>
     </div>
 </section>
@@ -93,7 +94,7 @@
     <div class="header">
         <div class="title">
             <button id="button_close_project" class="button_back"><i class="fa fa-chevron-left"></i></button>
-            <h1 style="padding: 3vh">Project</h1>
+            <h1 id="project_title" style="padding: 3vh">Project</h1>
             <div></div>
         </div>
     </div>

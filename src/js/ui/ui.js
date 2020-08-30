@@ -30,4 +30,29 @@ function setOnClickListeners() {
     document.getElementById('button_close_project').addEventListener('click', () => {
         openPage('profile');
     });
+
+    document.getElementById('button_open_manifesto').addEventListener('click', () => {
+        openPage('project');
+        showProjectDescription(manifesto);
+    });
+
+    document.getElementById('button_open_wayco').addEventListener('click', () => {
+        openPage('project');
+        showProjectDescription(wayco);
+    });
+
+    document.getElementById('button_open_recycling_starter').addEventListener('click', () => {
+        openPage('project');
+        showProjectDescription(recyclingStarter);
+    });
+
+    document.getElementById('button_open_isc').addEventListener('click', () => {
+        openPage('project');
+        showProjectDescription(isc);
+    });
+
+    document.getElementById('button_open_rush_zone').addEventListener('click', () => {
+        openPage('project');
+        showProjectDescription(rushZone);
+    });
 }
