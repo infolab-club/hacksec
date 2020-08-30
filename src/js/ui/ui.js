@@ -4,8 +4,9 @@
 function setOnClickListeners() {
     // Кнопка "Открыть камеру"
     document.getElementById('button_open_camera').addEventListener('click', () => {
-        openPage('camera');
+        // openPage('camera');
         // startScan();
+        openPage('game')
         startGame("");
     });
     // Кнопка "Начать играть"
@@ -15,7 +16,11 @@ function setOnClickListeners() {
     });
     // Кнопка "Взломать" (проект)
     document.getElementById('button_hack').addEventListener('click', () => {
-        openPage('project');
+        isSuccessful = onCheckButton();
+        if (isSuccessful) {
+            openPage('project');
+            showProjectDescription(wayco);
+        }
     });
     // Кнопка "Закрыть камеру"
     document.getElementById('button_close_camera').addEventListener('click', () => {

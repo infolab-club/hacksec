@@ -6,6 +6,7 @@
   "author": "<xalvaine@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "html5-qrcode": "^1.2.0"
+    "html5-qrcode": "^1.2.0",
+    "lodash": "^4.17.20"
   }
 }

@@ -66,8 +66,8 @@ function showProjectDescription(project) {
                 "На данный момент там прорабатывается концепт, создаются 3D модели, " +
                 "рисуются арты и дизайн интерфейса.\n" +
                 "\n" +
-                "На проект нужны будут Unity-разработчики (C#), дизайнеры, художники, project manager, 3D модельщики, " +
-                "геймдизайнеры, композиторы.";
+                "На проект нужны будут Unity-разработчики (C#), дизайнеры, " +
+                "художники, project manager, 3D модельщики, геймдизайнеры, композиторы.";
             break;
     }
     document.getElementById('project_description').textContent = text;

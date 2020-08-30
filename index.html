@@ -15,6 +15,7 @@
     <script src="src/js/scan.js"></script>
     <script src="src/js/game.js"></script>
     <script src="src/js/projectDescription.js"></script>
+    <script src="node_modules/lodash/lodash.js"></script>
 </head>
 <body>
 <!-- Профиль -->
@@ -59,7 +60,7 @@
     </div>
     <div class="main">
         <div>
-            <span class="active">Платформа</span>
+            <span id="title_platform" class="active">Платформа</span>
             <div class="container">
                 <div class="block correct" id="button11" onclick="onClickButton('button11')">Android</div>
                 <div class="block correct" id="button12" onclick="onClickButton('button12')">iOS</div>
@@ -68,7 +69,7 @@
             </div>
         </div>
         <div>
-            <span class="">Языки программирования</span>
+            <span id="title_language" class="active">Языки программирования</span>
             <div class="container">
                 <div class="block correct" id="button21" onclick="onClickButton('button21')">Java Script</div>
                 <div class="block" id="button22" onclick="onClickButton('button22')">C#</div>
@@ -77,7 +78,7 @@
             </div>
         </div>
         <div>
-            <span class="">Среды разработки</span>
+            <span id="title_env" class="active">Среды разработки</span>
             <div class="container">
                 <div class="block incorrect" id="button31" onclick="onClickButton('button31')">Unity</div>
                 <div class="block correct" id="button32" onclick="onClickButton('button32')">Android Studio</div>
@@ -86,7 +87,7 @@
             </div>
         </div>
     </div>
-    <button id="button_hack" class="button_open_camera" onclick="onCheckButton()">Взломать</button>
+    <button id="button_hack" class="button_open_camera">Взломать</button>
 </section>
 
 <!-- Проект -->
