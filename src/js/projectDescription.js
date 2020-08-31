@@ -4,6 +4,10 @@ var recyclingStarter = 'Recycling Starter';
 var isc = 'ISC';
 var rushZone = 'Rush Zone';
 
+var img1 = document.getElementById('project_screen1');
+var img2 = document.getElementById('project_screen2');
+var img3 = document.getElementById('project_screen3');
+
 function showProjectDescription(project) {
     text = ""
     switch (project) {
@@ -20,6 +24,9 @@ function showProjectDescription(project) {
                 "медицинским экспертам компании).\n" +
                 "\n" +
                 "Нам нужны JavaScript разработчики.\n";
+            img1.src = 'src/img/screenshots/manifesto0.jpg';
+            img2.src = 'src/img/screenshots/manifesto1.jpg';
+            img3.src = 'src/img/screenshots/manifesto2.jpg';
             break;
         case wayco:
             text = "WayCo — наш стартап по удалённому заказу кофе.\n" +
@@ -28,6 +35,9 @@ function showProjectDescription(project) {
                 "просто забираешь заказ без необходимости стоять в очереди или ждать его приготовления.\n" +
                 "Кроме того, есть возможность динамического определения времени прибытия в кофейню " +
                 "по геолокации и дорожной ситуации.";
+            img1.src = 'src/img/screenshots/wayco0.jpg';
+            img2.src = 'src/img/screenshots/wayco1.jpg';
+            img3.src = 'src/img/screenshots/wayco2.jpg';
             break;
         case recyclingStarter:
             text = "Recycling Starter — сервис для автоматизации раздельного сбора отходов в университетах. " +
@@ -45,6 +55,9 @@ function showProjectDescription(project) {
                 "Данный проект выигрывал в экологическом хакатоне и кейс-чемпионате.\n" +
                 "\n" +
                 "Но он всё равно испытывает потребность в разработчиках: Frontend, Backend и iOS т.к. работы много."
+            img1.src = 'src/img/screenshots/restarter0.jpg';
+            img2.src = 'src/img/screenshots/restarter1.jpg';
+            img3.src = 'src/img/screenshots/restarter2.jpg';
             break;
         case isc:
             text = "ISC — Android приложение предназначенное для лаборантов центра инфохимии. " +
@@ -55,6 +68,9 @@ function showProjectDescription(project) {
                 "Также в приложении можно просматривать историю замеров и выгружать их в облако.\n" +
                 "\n" +
                 "Приложение написано на Java.";
+            img1.src = 'src/img/screenshots/isc0.jpg';
+            img2.src = 'src/img/screenshots/isc1.jpg';
+            img3.src = 'src/img/screenshots/isc2.jpg';
             break;
         case rushZone:
             text = "Казуальная мобильная игра — коммерческий проект с YouTube каналом \"Ну и бред\"." +
@@ -68,6 +84,9 @@ function showProjectDescription(project) {
                 "\n" +
                 "На проект нужны будут Unity-разработчики (C#), дизайнеры, " +
                 "художники, project manager, 3D модельщики, геймдизайнеры, композиторы.";
+            img1.src = 'src/img/screenshots/rushzone0.jpg';
+            img2.src = 'src/img/screenshots/rushzone1.jpg';
+            img3.src = 'src/img/screenshots/rushzone2.jpg';
             break;
     }
     document.getElementById('project_description').textContent = text;
