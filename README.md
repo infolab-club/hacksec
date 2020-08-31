@@ -127,6 +127,8 @@ iOS | Web | **Android** | Windows
 
 **Java** | C# | Python | Swift
 
+Web Storm | **Android Studio** | XCode | Unity
+
 ### Recycling Starter
 
 Сервис для автоматизации раздельного сбора отходов, состоящий из сайта и мобильных приложений.
@@ -134,6 +136,8 @@ iOS | Web | **Android** | Windows
 **Android** | **iOS** | MacOS | **Web**
 
 Python | **Java Script** | **Swift** | **Java**
+
+**Android Studio** | Unity | **Web Storm** | **XCode**
 
 ### Manifesto
 
@@ -143,6 +147,8 @@ Windows | iOS | **Tizen** | Linux
 
 **Java Script** | Python | Pascal | C#
 
+**Tizen Studio** | VS Code | Unity | Atom
+
 ### WayCo
 
 Сервис для удалённого заказа кофе, состоящий из веб и мобильных приложений.
@@ -151,6 +157,8 @@ Windows | iOS | **Tizen** | Linux
 
 **Java** | **Swift** | **Java Script** | Go
 
+PyCharm | **XCode** | **Android Studio** | **Web Storm**
+
 ### Rush Zone
 
 Мобильная экшн-рпг игра, разрабатываемая на Unity.
@@ -158,3 +166,5 @@ Windows | iOS | **Tizen** | Linux
 Linux | **Android** | **iOS** | Web
 
 Kotlin | **C#** | Python | Java
+
+**Unity** | PyCharm | Web Storm | Eclipse
