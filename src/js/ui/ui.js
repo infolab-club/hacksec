@@ -35,28 +35,38 @@ function setOnClickListeners() {
     });
 
     document.getElementById('button_open_manifesto').addEventListener('click', () => {
-        openPage('project');
-        showProjectDescription(manifesto);
+        if (manifestoEnable) {
+            openPage('project');
+            showProjectDescription(manifesto);
+        }
     });
 
     document.getElementById('button_open_wayco').addEventListener('click', () => {
-        openPage('project');
-        showProjectDescription(wayco);
+        if (waycoEnable) {
+            openPage('project');
+            showProjectDescription(wayco);
+        }
     });
 
     document.getElementById('button_open_recycling_starter').addEventListener('click', () => {
-        openPage('project');
-        showProjectDescription(recyclingStarter);
+        if (restarterEnable) {
+            openPage('project');
+            showProjectDescription(recyclingStarter);
+        }
     });
 
     document.getElementById('button_open_isc').addEventListener('click', () => {
-        openPage('project');
-        showProjectDescription(isc);
+        if (iscEnable) {
+            openPage('project');
+            showProjectDescription(isc);
+        }
     });
 
     document.getElementById('button_open_rush_zone').addEventListener('click', () => {
-        openPage('project');
-        showProjectDescription(rushZone);
+        if (rushzoneEnable) {
+            openPage('project');
+            showProjectDescription(rushZone);
+        }
     });
 }
 
