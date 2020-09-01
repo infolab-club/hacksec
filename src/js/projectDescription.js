@@ -24,9 +24,9 @@ function showProjectDescription(project) {
                 "медицинским экспертам компании).\n" +
                 "\n" +
                 "Нам нужны JavaScript разработчики.\n";
-            img1.src = 'src/img/screenshots/manifesto0.jpg';
-            img2.src = 'src/img/screenshots/manifesto1.jpg';
-            img3.src = 'src/img/screenshots/manifesto2.jpg';
+            img1.src = 'src/img/screenshots/manifest0.jpg';
+            img2.src = 'src/img/screenshots/manifest1.jpg';
+            img3.src = 'src/img/screenshots/manifest2.jpg';
             break;
         case wayco:
             text = "WayCo — наш стартап по удалённому заказу кофе.\n" +
@@ -84,9 +84,9 @@ function showProjectDescription(project) {
                 "\n" +
                 "На проект нужны будут Unity-разработчики (C#), дизайнеры, " +
                 "художники, project manager, 3D модельщики, геймдизайнеры, композиторы.";
-            img1.src = 'src/img/screenshots/rushzone0.jpg';
-            img2.src = 'src/img/screenshots/rushzone1.jpg';
-            img3.src = 'src/img/screenshots/rushzone2.jpg';
+            img1.src = 'src/img/screenshots/rush0.jpg';
+            img2.src = 'src/img/screenshots/rush1.jpg';
+            img3.src = 'src/img/screenshots/rush2.jpg';
             break;
     }
     document.getElementById('project_description').textContent = text;

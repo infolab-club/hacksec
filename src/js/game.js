@@ -11,12 +11,12 @@ function startGame(gameName) {
 function onClickButton(buttonId) {
     thisButton = document.getElementById(buttonId);
 
-    if (thisButton.className == "block") {
+    if (thisButton.className === "block") {
         thisButton.className = "block correct";
         playerId.push(buttonId);
 
         console.log(playerId);
-    } else if(thisButton.className = "block correct"){
+    } else if(thisButton.className === "block correct"){
         thisButton.className = "block";
 
         _.pull(playerId,buttonId);

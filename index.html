@@ -16,6 +16,7 @@
     <script src="src/js/game.js"></script>
     <script src="src/js/projectDescription.js"></script>
     <script src="node_modules/lodash/lodash.js"></script>
+
 </head>
 <body>
 <!-- Профиль -->
@@ -41,7 +42,7 @@
     <div id="button_open_game" class="frame vh100">
         <div class="box"></div>
     </div>
-    <button id="button_close_camera" class="button_back"><i class="fa fa-chevron-left"></i></button>
+    <button id="button_close" class="button_back"><i class="fa fa-chevron-left"></i></button>
     <div class="camera_border-wrapper vh100"><div class="camera_border"></div></div>
 </section>
 
@@ -49,7 +50,9 @@
 <section id="game" class="page game hidden">
     <div class="header">
         <div class="title">
+<!--            <form action="index.html">-->
             <button id="button_close_game" class="button_back"><i class="fa fa-chevron-left"></i></button>
+<!--            </form>-->
             <h1 style="padding: 3vh">Game</h1>
             <div></div>
         </div>
@@ -99,12 +102,13 @@
             <div></div>
         </div>
     </div>
-    <div class="preview">
+    <div  id="project_description">
+    <div class="preview" >
         <img src="src/img/Screenshot.svg" id="project_screen1" alt="">
         <img src="src/img/Screenshot.svg" id="project_screen2" alt="">
         <img src="src/img/Screenshot.svg" id="project_screen3" alt="">
     </div>
-    <div class="text" id="project_description">
+    <div class="text">
         <span>WayCo — стартап по удалённому заказу кофе.
             Перед тем, как пойти на работу/учёбу, ты можешь сделать заказ в кофейне через наш сервис к определённому времени. И когда ты подойдёшь, просто забираешь заказ без необходимости стоять в очереди или ждать его приготовления.
             Кроме того, есть возможность динамического определения времени прибытия в кофейню по геолокации и дорожной ситуации.
@@ -117,7 +121,8 @@
             5. Приложение для касс кофейн-партнёров для отслеживания заказов — Java
         </span>
     </div>
-    <button class="button_open_camera">Присоединиться</button>
+    </div>
+    <a href="https://vk.com/infolab_club"> <button class="button_open_camera">Присоединиться</button></a>
 
 </section>
 <script>
