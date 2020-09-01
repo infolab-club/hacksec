@@ -1,3 +1,4 @@
 render();
 setOnClickListeners();
+loadFromStorage();
 showProjectEnable();
