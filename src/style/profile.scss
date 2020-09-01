@@ -76,7 +76,6 @@ html, body {
       justify-content: center;
       text-align: center;
       color: #E5E5E5;
-      opacity: 0.7;
       text-shadow: 0px 1.33333px 1.33333px rgba(0, 0, 0, 0.5);
 
       background-repeat: no-repeat;
@@ -103,10 +102,6 @@ html, body {
 
     .RushZone {
       background-image: url(../img/RushZone.png);
-    }
-
-    .active {
-      opacity: 1;
     }
   }
 }
@@ -167,9 +162,6 @@ html, body {
       margin: 10px;
       opacity: 0.5;
       color: #1ADDA5;
-    }
-    .active {
-      opacity: 1;
     }
     .container {
       width: 100%;

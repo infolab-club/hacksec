@@ -5,6 +5,12 @@ var recyclingStarter = 'Recycling Starter';
 var isc = 'ISC';
 var rushZone = 'Rush Zone';
 
+let iscEnable = false;
+let restarterEnable = false;
+let manifestoEnable = false;
+let waycoEnable = false;
+let rushzoneEnable = false;
+
 let img1 = document.getElementById("project_screen1");
 let img2 = document.getElementById("project_screen2");
 let img3 = document.getElementById("project_screen3");

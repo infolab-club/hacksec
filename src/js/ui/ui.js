@@ -58,5 +58,27 @@ function setOnClickListeners() {
         openPage('project');
         showProjectDescription(rushZone);
     });
+}
 
+function showProjectEnable() {
+    const buttonIscProject = document.getElementById('button_open_isc');
+    if (iscEnable) {
+        buttonIscProject.classList.remove('item_disable')
+    } else buttonIscProject.classList.add('item_disable');
+    const buttonRestarterProject = document.getElementById('button_open_recycling_starter');
+    if (restarterEnable) {
+        buttonRestarterProject.classList.remove('item_disable')
+    } else buttonRestarterProject.classList.add('item_disable');
+    const buttonManifestoProject = document.getElementById('button_open_manifesto');
+    if (manifestoEnable) {
+        buttonManifestoProject.classList.remove('item_disable')
+    } else buttonManifestoProject.classList.add('item_disable');
+    const buttonWayCoProject = document.getElementById('button_open_wayco');
+    if (waycoEnable) {
+        buttonWayCoProject.classList.remove('item_disable')
+    } else buttonWayCoProject.classList.add('item_disable');
+    const buttonRushZoneProject = document.getElementById('button_open_rush_zone');
+    if (rushzoneEnable) {
+        buttonRushZoneProject.classList.remove('item_disable')
+    } else buttonRushZoneProject.classList.add('item_disable');
 }

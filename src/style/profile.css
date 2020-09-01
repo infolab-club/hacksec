@@ -71,7 +71,6 @@ html, body {
   justify-content: center;
   text-align: center;
   color: #E5E5E5;
-  opacity: 0.7;
   text-shadow: 0px 1.33333px 1.33333px rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-size: 77vw 8.5vh;
@@ -200,7 +199,9 @@ html, body {
 }
 .project .preview img:nth-child(odd) {
   width: 28vw;
-  opacity: 0.7;
+}
+.item_disable {
+  opacity: 0.2;
 }
 .project .text {
   width: 80vw;
