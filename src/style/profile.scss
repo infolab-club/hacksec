@@ -246,41 +246,30 @@ html, body {
   }
 }
 .camera {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 
-  .frame {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 0;
-    width: 100vw;
-    height: 100vh;
-    mix-blend-mode: multiply;
-    background: rgba(29, 29, 40, 0.4);
-    .box {
-      position: absolute;
-      width: 40vw;
-      height: 40vw;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      z-index: 2;
-      mix-blend-mode: normal;
-      background: #FFFFFF;
-    }
-  }
-  //TODO remove
-  .camera_image {
-    height: 100%;
-    object-fit: cover;
-  }
+  //.frame {
+  //  position: absolute;
+  //  left: 0;
+  //  top: 0;
+  //  z-index: 0;
+  //  width: 100vw;
+  //  height: 100vh;
+  //  mix-blend-mode: multiply;
+  //  background: rgba(29, 29, 40, 0.4);
+  //  .box {
+  //    position: absolute;
+  //    width: 40vw;
+  //    height: 40vw;
+  //    left: 0;
+  //    top: 0;
+  //    right: 0;
+  //    bottom: 0;
+  //    margin: auto;
+  //    z-index: 2;
+  //    mix-blend-mode: normal;
+  //    background: #FFFFFF;
+  //  }
+  //}
 
   .button_back {
     position: relative;
@@ -299,28 +288,6 @@ html, body {
       margin: 20px;
       right: 2px;
     }
-  }
-  .camera_border {
-    width: 40vw;
-    height: 40vw;
-    margin: auto;
-    border: 1vw dashed white;
-    z-index: 3;
-  }
-  .camera_border-wrapper {
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    width: 100%;
-  }
-  .button_open_camera {
-    position: absolute;
-    bottom: 4vh;
-    left: 20vw;
-    mix-blend-mode: normal;
   }
 }
 //заголовок

@@ -224,41 +224,53 @@ html, body {
   bottom: 2vh;
 }
 
-.camera {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.camera .frame {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-  width: 100vw;
-  height: 100vh;
-  mix-blend-mode: multiply;
-  background: rgba(29, 29, 40, 0.4);
-}
-.camera .frame .box {
-  position: absolute;
-  width: 40vw;
-  height: 40vw;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: 2;
-  mix-blend-mode: normal;
-  background: #FFFFFF;
-}
-.camera .camera_image {
-  height: 100%;
-  object-fit: cover;
-}
+/*.camera {*/
+/*  width: 100vw;*/
+/*  height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: space-between;*/
+/*}*/
+/*.camera .frame {*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  top: 0;*/
+/*  z-index: 0;*/
+/*  width: 100vw;*/
+/*  height: 100vh;*/
+/*  mix-blend-mode: multiply;*/
+/*  background: rgba(29, 29, 40, 0.4);*/
+/*}*/
+/*.camera .frame .box {*/
+/*  position: absolute;*/
+/*  width: 40vw;*/
+/*  height: 40vw;*/
+/*  left: 0;*/
+/*  top: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  margin: auto;*/
+/*  z-index: 2;*/
+/*  mix-blend-mode: normal;*/
+/*  background: #FFFFFF;*/
+/*}*/
+/*.camera .camera_border {*/
+/*  width: 40vw;*/
+/*  height: 40vw;*/
+/*  margin: auto;*/
+/*  border: 1vw dashed white;*/
+/*  z-index: 3;*/
+/*}*/
+/*.camera .camera_border-wrapper {*/
+/*  position: absolute;*/
+/*  height: 100vh;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  z-index: 2;*/
+/*  display: flex;*/
+/*  width: 100%;*/
+/*}*/
 .camera .button_back {
   position: relative;
   top: 4vh;
@@ -274,29 +286,6 @@ html, body {
   font-size: 2.3vh;
   position: relative;
   margin-top: 40%;
-
-}
-.camera .camera_border {
-  width: 40vw;
-  height: 40vw;
-  margin: auto;
-  border: 1vw dashed white;
-  z-index: 3;
-}
-.camera .camera_border-wrapper {
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  width: 100%;
-}
-.camera .button_open_camera {
-  position: absolute;
-  bottom: 4vh;
-  left: 20vw;
-  mix-blend-mode: normal;
 }
 
 .header {

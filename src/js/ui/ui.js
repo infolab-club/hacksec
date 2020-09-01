@@ -7,11 +7,6 @@ function setOnClickListeners() {
         openPage('camera');
         startScan();
     });
-    // Кнопка "Начать играть"
-    document.getElementById('button_open_game').addEventListener('click', () => {
-        openPage('game');
-        // startGame("");
-    });
     // Кнопка "Взломать" (проект)
     document.getElementById('button_hack').addEventListener('click', () => {
         isSuccessful = onCheckButton();
