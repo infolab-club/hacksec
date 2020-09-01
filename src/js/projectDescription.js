@@ -89,6 +89,6 @@ function showProjectDescription(project) {
             img3.src = 'src/img/screenshots/rush2.jpg';
             break;
     }
-    document.getElementById('project_description').textContent = text;
+    document.getElementById('project_description_text').textContent = text;
     document.getElementById('project_title').textContent = project;
 }

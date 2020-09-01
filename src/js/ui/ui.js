@@ -4,6 +4,7 @@
 function setOnClickListeners() {
     // Кнопка "Открыть камеру"
     document.getElementById('button_open_camera').addEventListener('click', () => {
+        // openPage('camera');
         startScan();
         openPage('camera')
         startGame("");

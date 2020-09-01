@@ -38,11 +38,11 @@
 
 <!-- Камера -->
 <section id="camera" class="page camera hidden vh100">
+    <button id="button_close_camera" class="button_back"><i class="fa fa-chevron-left"></i></button>
     <div class="qr_camera vh100" id="reader"></div>
     <div id="button_open_game" class="frame vh100">
         <div class="box"></div>
     </div>
-    <button id="button_close" class="button_back"><i class="fa fa-chevron-left"></i></button>
     <div class="camera_border-wrapper vh100"><div class="camera_border"></div></div>
 </section>
 
@@ -108,7 +108,7 @@
         <img src="src/img/Screenshot.svg" id="project_screen2" alt="">
         <img src="src/img/Screenshot.svg" id="project_screen3" alt="">
     </div>
-    <div class="text">
+    <div id="project_description_text" class="text">
         <span>WayCo — стартап по удалённому заказу кофе.
             Перед тем, как пойти на работу/учёбу, ты можешь сделать заказ в кофейне через наш сервис к определённому времени. И когда ты подойдёшь, просто забираешь заказ без необходимости стоять в очереди или ждать его приготовления.
             Кроме того, есть возможность динамического определения времени прибытия в кофейню по геолокации и дорожной ситуации.
