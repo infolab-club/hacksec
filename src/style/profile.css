@@ -188,7 +188,7 @@ html, body {
 }
 .project .preview {
   width: 90vw;
-  margin: 0 auto;
+  margin: 0 auto 0 5vw;
   display: flex;
   flex-direction: row;
   align-items: center;
