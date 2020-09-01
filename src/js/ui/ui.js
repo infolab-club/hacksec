@@ -8,7 +8,9 @@ function setOnClickListeners() {
         openPage('camera')
         startGame("");
     });
-
+    //  document.getElementById('button_close').addEventListener('click', () => {
+    //     openPage('project');
+    // });
     // Кнопка "Начать играть"
     document.getElementById('button_open_game').addEventListener('click', () => {
         openPage('game');
@@ -22,7 +24,7 @@ function setOnClickListeners() {
             showProjectDescription(wayco);
         }
     });
-    //Кнопка "Закрыть камеру"
+    // Кнопка "Закрыть камеру"
     document.getElementById('button_close_camera').addEventListener('click', () => {
         openPage('profile');
     });
