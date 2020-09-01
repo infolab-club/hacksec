@@ -292,6 +292,7 @@ html, body {
 
   .button_back {
     position: absolute;
+
     top: 4vh;
     left: 5vw;
     width: 10vw;
@@ -299,10 +300,11 @@ html, body {
     mix-blend-mode: normal;
     background: white;
     border-radius: 3vw;
-    z-index: 1;
+
     .fa {
       font-size: 2.3vh;
-      position: relative;
+      position: absolute;
+      margin: 20px;
       right: 2px;
     }
   }
