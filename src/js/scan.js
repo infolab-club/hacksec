@@ -1,7 +1,7 @@
-const html5QrCode = new Html5Qrcode(/* element id */ "reader", true);
+const html5QrCode = new Html5Qrcode("reader", true);
 
 function startScan() {
-    let cameras = Html5Qrcode.getCameras()
+    let cameras = Html5Qrcode.getCameras();
     cameras.then(devices => {
         /**
          * devices would be an array of objects of type:
@@ -11,10 +11,10 @@ function startScan() {
         console.log("Camera Number: " + cameraNum)
         if (devices && devices.length) {
             cameraId = devices[cameraNum].id;
-            return scanning(cameraId)
+            return scanning(cameraId);
         }
     }).catch(err => {
-        console.log("GetCameras. Error: " + err)
+        console.log("GetCameras. Error: " + err);
     });
 }
 
@@ -22,16 +22,18 @@ function scanning(cameraId) {
     html5QrCode.start(
         cameraId,
         {
-            fps: 10, // Optional frame per seconds for qr code scanning
+            fps: 10 // Optional frame per seconds for qr code scanning
         },
         qrCodeMessage => {
             alert("Message: " + qrCodeMessage);
+            stopScan();
+            return qrCodeMessage;
         },
         errorMessage => {
-            //console.log("Error: " + errorMessage)
+            // console.log("Error: " + errorMessage)
         })
         .catch(err => {
-            console.log("Start failed. Error: " + err)
+            console.log("Start failed. Error: " + err);
         });
 }
 
