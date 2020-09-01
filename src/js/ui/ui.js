@@ -22,7 +22,8 @@ function setOnClickListeners() {
     });
     // Кнопка "Завершить игру"
     document.getElementById('button_close_game').addEventListener('click', () => {
-        openPage('project');
+        openPage('camera');
+        startScan();
     });
     // Кнопка "Закрыть проект"
     document.getElementById('button_close_project').addEventListener('click', () => {

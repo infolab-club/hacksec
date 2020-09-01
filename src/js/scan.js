@@ -25,8 +25,18 @@ function scanning(cameraId) {
             fps: 10 // Optional frame per seconds for qr code scanning
         },
         qrCodeMessage => {
-            alert("Message: " + qrCodeMessage);
-            stopScan();
+            let projectName = '';
+            if (qrCodeMessage === 'https://vk.com/infolab_club?project=isc' && !iscEnable) projectName = isc;
+            if (qrCodeMessage === 'https://vk.com/infolab_club?project=restarter' && !restarterEnable) projectName = recyclingStarter;
+            if (qrCodeMessage === 'https://vk.com/infolab_club?project=manifesto' && !manifestoEnable) projectName = manifesto;
+            if (qrCodeMessage === 'https://vk.com/infolab_club?project=wayco' && !waycoEnable) projectName = wayco;
+            if (qrCodeMessage === 'https://vk.com/infolab_club?project=rushzone' && !rushzoneEnable) projectName = rushZone;
+            if (projectName !== '') {
+                currentProject = projectName;
+                stopScan();
+                startGame();
+                openPage('game');
+            }
             return qrCodeMessage;
         },
         errorMessage => {

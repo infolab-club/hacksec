@@ -5,6 +5,13 @@ let allId = [["button11", "button12", "button13", "button14"], ["button21", "but
 let playerId = [];
 
 function startGame(gameName) {
+    document.getElementById('game_header').innerText = currentProject;
+    const gameAbout = document.getElementById('game_about');
+    if (currentProject === isc) gameAbout.innerHTML = `<span>Нативное Android приложение для химических тестов.</span>`;
+    else if (currentProject === recyclingStarter) gameAbout.innerHTML = `<span>Сервис для автоматизации раздельного сбора отходов, состоящий из сайта и мобильных приложений.</span>`;
+    else if (currentProject === manifesto) gameAbout.innerHTML = `<span>Приложение для настройки бионических протезов для умных часов.</span>`;
+    else if (currentProject === wayco) gameAbout.innerHTML = `<span>Сервис для удалённого заказа кофе, состоящий из веб и мобильных приложений.</span>`;
+    else if (currentProject === rushZone) gameAbout.innerHTML = `<span>Мобильная экшн-рпг игра, разрабатываемая на Unity.</span>`;
     setInitialSettings()
 }
 
