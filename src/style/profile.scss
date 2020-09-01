@@ -291,8 +291,8 @@ html, body {
   }
 
   .button_back {
-    position: absolute;
-
+    position: relative;
+     z-index:1020;
     top: 4vh;
     left: 5vw;
     width: 10vw;
