@@ -31,9 +31,9 @@ function showProjectDescription(project) {
                         <br>2. C++ разработка
                         <br>3. Машинное обучение
                     </span>`;
-            // img1.src = '../src/img/screenshots/manifest0.jpg';
-            // img2.src = '../src/img/screenshots/manifest1.jpg';
-            // img3.src = '../src/img/screenshots/manifest2.jpg';
+            img1.src = 'src/img/screenshots/manifest0.jpg';
+            img2.src = 'src/img/screenshots/manifest1.jpg';
+            img3.src = 'src/img/screenshots/manifest2.jpg';
             break;
         case wayco:
             text = `<span>
@@ -53,9 +53,9 @@ function showProjectDescription(project) {
                         <br>3. iOS разработка
                         <br>4. Управление проектами
                     </span>`;
-            // img1.src = 'src/img/screenshots/wayco0.jpg';
-            // img2.src = 'src/img/screenshots/wayco1.jpg';
-            // img3.src = 'src/img/screenshots/wayco2.jpg';
+            img1.src = 'src/img/screenshots/wayco0.jpg';
+            img2.src = 'src/img/screenshots/wayco1.jpg';
+            img3.src = 'src/img/screenshots/wayco2.jpg';
             break;
         case recyclingStarter:
             text = `<span>
@@ -75,9 +75,9 @@ function showProjectDescription(project) {
                         <br>2. Backend разработка (Python)
                         <br>3. iOS разработка
                     </span>`;
-            // img1.src = 'src/img/screenshots/restarter0.jpg';
-            // img2.src = 'src/img/screenshots/restarter1.jpg';
-            // img3.src = 'src/img/screenshots/restarter2.jpg';
+            img1.src = 'src/img/screenshots/restarter0.jpg';
+            img2.src = 'src/img/screenshots/restarter1.jpg';
+            img3.src = 'src/img/screenshots/restarter2.jpg';
             break;
         case isc:
             text = `<span>
@@ -92,9 +92,9 @@ function showProjectDescription(project) {
                         1. UI/UX дизайн <br>
                         2. Android разработка
                     </span>`;
-            // img1.src = 'src/img/screenshots/isc0.jpg';
-            // img2.src = 'src/img/screenshots/isc1.jpg';
-            // img3.src = 'src/img/screenshots/isc2.jpg';
+            img1.src = 'src/img/screenshots/isc0.jpg';
+            img2.src = 'src/img/screenshots/isc1.jpg';
+            img3.src = 'src/img/screenshots/isc2.jpg';
             break;
         case rushZone:
             text = `<span>
@@ -113,9 +113,9 @@ function showProjectDescription(project) {
                         <br>5. Создавать 3D модели
                         <br>6. Писать сайндтреки
                     </span>`;
-            // img1.src = 'src/img/screenshots/rush0.jpg';
-            // img2.src = 'src/img/screenshots/rush1.jpg';
-            // img3.src = 'src/img/screenshots/rush2.jpg';
+            img1.src = 'src/img/screenshots/rush0.jpg';
+            img2.src = 'src/img/screenshots/rush1.jpg';
+            img3.src = 'src/img/screenshots/rush2.jpg';
             break;
     }
     document.getElementById('project_description_text').innerHTML = text;
