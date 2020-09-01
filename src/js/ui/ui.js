@@ -21,7 +21,7 @@ function setOnClickListeners() {
         }
     });
     // Кнопка "Закрыть камеру"
-    document.getElementById('button_close').addEventListener('click', () => {
+    document.getElementById('button_close_camera').addEventListener('click', () => {
         stopScan();
         openPage('profile');
     });
