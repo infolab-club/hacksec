@@ -25,10 +25,10 @@ function scanning(cameraId) {
             fps: 10, // Optional frame per seconds for qr code scanning
         },
         qrCodeMessage => {
-            console.log("Message: " + qrCodeMessage);
+            alert("Message: " + qrCodeMessage);
         },
         errorMessage => {
-            console.log("Error: " + errorMessage)
+            //console.log("Error: " + errorMessage)
         })
         .catch(err => {
             console.log("Start failed. Error: " + err)

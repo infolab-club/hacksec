@@ -1,3 +1,4 @@
+let currentProject;
 var manifesto = 'Manifesto';
 var wayco = 'WayCo';
 var recyclingStarter = 'Recycling Starter';
@@ -9,6 +10,7 @@ var img2 = document.getElementById('project_screen2');
 var img3 = document.getElementById('project_screen3');
 
 function showProjectDescription(project) {
+    currentProject = project;
     text = ""
     switch (project) {
         case manifesto:
