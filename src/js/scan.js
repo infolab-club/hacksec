@@ -25,6 +25,7 @@ function scanning(cameraId) {
             fps: 10 // Optional frame per seconds for qr code scanning
         },
         qrCodeMessage => {
+            console.log(qrCodeMessage);
             let projectName = '';
             if (qrCodeMessage === 'https://vk.com/infolab_club?project=isc' && !iscEnable) projectName = isc;
             if (qrCodeMessage === 'https://vk.com/infolab_club?project=restarter' && !restarterEnable) projectName = recyclingStarter;
