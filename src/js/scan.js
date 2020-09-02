@@ -22,7 +22,8 @@ function scanning(cameraId) {
     html5QrCode.start(
         cameraId,
         {
-            fps: 10 // Optional frame per seconds for qr code scanning
+            fps: 10, // Optional frame per seconds for qr code scanning
+            qrbox: 450
         },
         qrCodeMessage => {
             console.log(qrCodeMessage);
