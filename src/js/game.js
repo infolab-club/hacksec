@@ -88,6 +88,9 @@ function onCheckButton() {
 
     // Массив с неверно выбранными или не поставленными вариантами
     let wrong_answers = _.xor(playerId, currentTrueId.flat(2));
+    document.getElementById('title_platform').className = "active";
+    document.getElementById('title_language').className = "active";
+    document.getElementById('title_env').className = "active";
 
     if (wrong_answers.length === 0) {
         console.log(wrong_answers);
@@ -114,9 +117,6 @@ function onCheckButton() {
         saveToStorage();
         showProjectEnable();
         } else {
-        document.getElementById('title_platform').className = "active";
-        document.getElementById('title_language').className = "active";
-        document.getElementById('title_env').className = "active";
         console.log("BAD");
 
         wrong_answers.forEach(el => {
